@@ -1,15 +1,6 @@
-    /*Old color is #16a085;*/
-    /*old color is #1abc9c*/
-    /*new color is #23b0e6;*/
-    /*New color is #157ba2*/
 .homeLogo {
     width: 55%;
     /*height: auto;*/
-}
-
-.courseLogo {
-    margin-left: 30px;
-    width: 10em;
 }
 
 body {
@@ -22,7 +13,7 @@ body {
     -webkit-overflow-scrolling: touch;
 }
 h1, h2, h3, h4, h5, h6 {
-    font-family: Times;
+    font-family: Raleway;
     font-weight: 300;
     color: #333;
 }
@@ -109,7 +100,7 @@ hr {
     height: 100%}
 .menu h1.logo a {
     font-family: Raleway, Helvetica, Arial, sans-serif;
-    font-size: 10px;
+    font-size: 16px;
     font-weight: 800;
     letter-spacing: .15em;
     line-height: 40px;
@@ -118,7 +109,7 @@ hr {
     margin-top: 20px;
 }
 .menu h1.logo a:hover {
-    color: #23b0e6;
+    color: #1abc9c;
 }
 .menu img.logo {
     margin: 20px 0;
@@ -243,18 +234,18 @@ hr {
 #headerwrap h1 {
     margin-top: 130px;
     color: #fff;
-    font-size: 2.05em;
+    font-size: 140px;
     font-weight: 700;
     letter-spacing: 3px;
 }
 #headerwrap h2 {
     color: #fff;
     font-size: 50px;
-    /*font-weight: 100px;*/
+    font-weight: 100;
     letter-spacing: 2px;
 }
 #headerwrap i {
-    font-size: 50px;
+    font-size: 35px;
     color: #fff;
 }
 #headerwrap .spacer {
@@ -340,7 +331,7 @@ hr {
     margin-top: 150px;
 }
 #sp {
-    background: #1abc9c;
+    background: #2f2f2f;
     padding-top: 35px;
     padding-bottom: 35px;
 }
@@ -349,24 +340,6 @@ hr {
 }
 #sp-standout {
     background: url(../img/sp-standout-bg.jpg) no-repeat center top;
-    margin-top: -10px;
-    padding-top: 20px;
-    text-align: center;
-    background-attachment: relative;
-    background-position: center center;
-    min-height: 500px;
-    width: 100%;
-    -webkit-background-size: 100%;
-    -moz-background-size: 100%;
-    -o-background-size: 100%;
-    background-size: 100%;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
-#sp-standout-businessAnalytics {
-    background: url(../img/businessAnalytics/dataAnalytics.jpg) no-repeat center top;
     margin-top: -10px;
     padding-top: 20px;
     text-align: center;
