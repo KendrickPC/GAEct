@@ -2,6 +2,17 @@
     /*old color is #1abc9c*/
     /*new color is #23b0e6;*/
     /*New color is #157ba2*/
+/*begin css code to lock google maps*/
+.map-container iframe{
+    width: 100%;
+    display: block;
+    pointer-events: none;
+    position: relative; /* IE needs a position other than static */
+}
+.map-container iframe.clicked{
+    pointer-events: auto;
+}
+/*end css code to lock google maps*/
 .homeLogo {
     width: 55%;
     /*height: auto;*/
