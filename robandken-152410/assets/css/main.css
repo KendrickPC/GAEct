@@ -4,9 +4,13 @@
     /*New color is #157ba2*/
 /*begin css code to lock google maps*/
 
-.whatWeDo {
-    
+.fontAwesomeIcons {
+    text-align: center;
 }
+
+/*.whatWeDo {
+
+}*/
 
 .map-container iframe{
     width: 100%;
