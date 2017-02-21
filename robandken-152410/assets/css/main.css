@@ -8,10 +8,7 @@
     text-align: center;
 }
 
-/*.whatWeDo {
-
-}*/
-
+/*begin css code to lock google maps*/
 .map-container iframe{
     width: 100%;
     display: block;
@@ -23,8 +20,7 @@
 }
 /*end css code to lock google maps*/
 .homeLogo {
-    width: 55%;
-    /*height: auto;*/
+    width: 65%;
 }
 
 .courseLogo {
