@@ -389,6 +389,25 @@ hr {
     background-size: cover;
 }
 
+#sp-standout-scratchJr {
+    background: url(../img/courses/scratchJr/scratchjrlogo.png) no-repeat center top;
+    margin-top: -10px;
+    padding-top: 20px;
+    text-align: center;
+    background-attachment: relative;
+    background-position: center center;
+    min-height: 500px;
+    width: 100%;
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
 #sp-standout-scratch {
     background: url(../img/courses/scratch/scratch2.png) no-repeat center top;
     margin-top: -10px;
@@ -408,8 +427,8 @@ hr {
     background-size: cover;
 }
 
-#sp-standout-scratchJr {
-    background: url(../img/courses/scratchJr/scratchjrlogo.png) no-repeat center top;
+#sp-standout-udacity {
+    background: url(../img/courses/udacity/udacity2.jpg) no-repeat center top;
     margin-top: -10px;
     padding-top: 20px;
     text-align: center;
