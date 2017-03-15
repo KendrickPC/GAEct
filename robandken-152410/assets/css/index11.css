@@ -1,0 +1,98 @@
+/*
+ * Start Bootstrap - Full (http://startbootstrap.com/)
+ * Copyright 2013-2016 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
+ */
+
+
+
+/* Header Image Background - Change the URL below to your image path (example: ../images/background.jpg) */
+
+/*.full {
+    background: url('http://placehold.it/1920x1080') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}*/
+
+
+
+body{
+  background: url('../img/homePage/homePageBackground1.png') no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
+}
+
+
+#btn_cont{
+  position: relative;
+  margin: 0 auto;
+  margin-top: 22em;
+  /* NOT IMPORTANT */
+  
+  width: 300px;
+  border: 2px solid #fff;
+  height: 30px;
+}
+.btn{
+  display: block;
+  position: absolute;
+  float: left;
+  width: 141px;
+  height: 0;
+  cursor: pointer;  
+}
+.btn:nth-child(1){
+  border-bottom: 30px solid #ca1515;
+  border-right: 20px solid transparent;
+  left: 0px;
+  z-index: 1;
+}
+.btn:nth-child(1):hover{
+  border-bottom: 30px solid #fff;
+  color: #c74523;
+}
+.btn:nth-child(2){
+  border-left: 20px solid transparent;
+  border-top: 30px solid blue;
+  right: 0px;
+  z-index: 2;
+}
+.btn:nth-child(2):hover{
+  border-top: 30px solid #fff;
+  color: #c74523;
+}
+
+.btn:nth-child(2):before{
+  border-right: 2px solid #fff;
+  content: "";
+  height: 40px;
+  position: absolute;
+  right: 150px;
+  top: -35px;
+  transform: rotate(-34deg) translateZ(0px);
+}
+.btn span{
+  position: relative;
+  float: left;
+  top: 7px;
+  width: 100%;
+  height:auto;
+  text-align: center;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  margin: 0px;
+  padding: 0px;
+}
+.btn:hover span{
+  color: #1abc9c;
+}
+.btn:nth-child(2) span{
+   top: -23px;
+
+}
+
