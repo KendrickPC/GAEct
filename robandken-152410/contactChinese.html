@@ -10,6 +10,7 @@
 	<title>codeTaiwan.org</title><!-- Bootstrap core CSS -->
 	<link href="assets/css/bootstrap.css" rel="stylesheet"><!-- Custom styles for this template -->
 	<link href="assets/css/main.css" rel="stylesheet">
+	<link href="assets/css/contactChinese.css" rel="stylesheet">
 	<link href="assets/css/font-awesome.min.css" rel="stylesheet">
 	<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'><!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -20,6 +21,7 @@
 
 	<script src="assets/js/modernizr.custom.js">
 	</script>
+
 </head>
 <body>
 	<!-- begin nav section -->
@@ -47,30 +49,38 @@
 				<a href="index.html"><img alt="codeTaiwan logo" class="courseLogo" src="assets/img/svg/inverted.svg"></a>
 			</div>
 		</div>
-	</div><!-- end logo section -->
-	<!-- begin contact form section -->
-	<div class="container">
-		<div class="row">
-			<div class="col-xs-12 col-sm-8 col-md-6 col-sm-push-2 col-md-push-3 form__container">
-				<h2>Let's Work Together</h2>
-				<form method="post" action="http://formspree.io/info@codeTaiwan.org" autocomplete="on" role="form">
-					<div class="form-group">
-						<label for="name">Your Name</label> <input class="form-control form-input" name="name" placeholder="Full name" required="" type="text">
-					</div>
-					<div class="form-group">
-						<label for="_replyto">Your Email</label> <input class="form-control form-input" name="_replyto" placeholder="Email" required="" type="email">
-					</div>
-					<div class="form-group">
-						<label for="message">Leave a Message</label> 
-						<textarea class="form-control" id="message" name="message" placeholder="Message" required="" rows="4"></textarea>
-					</div>
-					<div>
-						<input class="btn btn-primary" type="submit" value="Send"> <input name="_subject" type="hidden" value="New submission!">
-					</div>
-				</form>
-			</div>
-		</div>
 	</div>
+	<!-- end logo section -->
+	<!-- begin contact form section -->
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-sm-8 col-md-6 col-sm-push-2 col-md-push-3 form__container">
+      <h2>Let's work together</h2>
+      <form action="//formspree.io/info@codeTaiwan.org" role="form" method="POST" autocomplete="on">
+        
+        <div class="form-group">
+          <label for="name">Your Name</label>
+          <input type="text" name="name" class="form-control form-input" placeholder="Full name" required>
+        </div>
+
+        <div class="form-group">
+          <label for="_replyto">Your Email</label>
+          <input type="email" name="_replyto" class="form-control form-input" placeholder="Email" required>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Leave a Message</label>
+          <textarea id="message" name="message" class="form-control" rows="4" width="100%" placeholder="Message" required></textarea>
+        </div>
+
+        <div>
+          <input type="submit" class="btn btn-primary" value="Send">
+          <input type="hidden" name="_subject" value="New submission!"/>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
 	<!-- end contact form section -->
 	<!-- begin text section -->
 	<div class="container">
