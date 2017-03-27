@@ -387,7 +387,7 @@ hr {
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: cover;
+    background-size: 100%;
 }
 
 #sp-standout-scratchJr {
@@ -406,7 +406,7 @@ hr {
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: cover;
+    background-size: 100%;
 }
 
 #sp-standout-scratch {
@@ -425,7 +425,7 @@ hr {
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: cover;
+    background-size: 100%;
 }
 
 #sp-standout-udacity {
@@ -444,7 +444,7 @@ hr {
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: cover;
+    background-size: 100%;
 }
 
 #sp-standout-coursera {
@@ -463,7 +463,7 @@ hr {
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: cover;
+    background-size: 100%;
 }
 
 #sp-standout-codecademy {
@@ -482,7 +482,7 @@ hr {
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: cover;
+    background-size: 100%;
 }
 
 #sp-standout-madeWithCode {
@@ -501,7 +501,7 @@ hr {
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: cover;
+    background-size: 100%;
 }
 
 #sp-standout-khanAcademy {
@@ -520,7 +520,7 @@ hr {
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: cover;
+    background-size: 100%;
 }
 
 #sp-standout-treehouse {
@@ -539,7 +539,7 @@ hr {
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: cover;
+    background-size: 100%;
 }
 
 #sp-standout-lynda {
@@ -558,7 +558,7 @@ hr {
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: cover;
+    background-size: 100%;
 }
 
 #sp-standout-jetbrains {
@@ -577,7 +577,7 @@ hr {
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: cover;
+    background-size: 100%;
 }
 
 #sp-standout-edx {
@@ -596,7 +596,7 @@ hr {
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: cover;
+    background-size: 100%;
 }
 
 
@@ -616,13 +616,13 @@ hr {
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: cover;
+    background-size: 100%;
 }
 
 #sp-standout-swiftPlaygrounds {
     background: url(../img/courses/swiftPlaygrounds/swiftPlaygrounds2.jpg) no-repeat center top;
-    margin-top: -10px;
-    padding-top: 20px;
+    margin-top: -20px;
+    padding-top: 0px;
     text-align: center;
     background-attachment: relative;
     background-position: center center;
@@ -635,7 +635,7 @@ hr {
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: cover;
+    background-size: 100%;
 }
 
 #portfolio {
