@@ -83,7 +83,7 @@
 
 /***index page slider****/
 .caption.title-2 {
-color: #1abc9c;
+color: white;
 font-size: 48px;
 line-height: 56px;
 font-weight: 900;
@@ -159,7 +159,7 @@ font-family: 'Open Sans', sans-serif;
 
 
 .text-center-top{
-       color: #1abc9c;
+       color: white;
     font-weight: 700;
     text-transform: uppercase;
     font-size: 60px;
@@ -174,7 +174,7 @@ font-family: 'Open Sans', sans-serif;
 
 }
 .left-tile-text{
-      color: #1abc9c;
+      color: white;
     font-weight: 800;
     text-transform: uppercase;
     font-size: 50px;
