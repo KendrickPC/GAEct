@@ -1,662 +1,402 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta content="IE=edge" http-equiv="X-UA-Compatible">
-    <meta content="width=device-width, initial-scale=1" name="viewport">
-    <meta name="author" content="EveryDayKenneth">
-    <meta name="keywords" content="codeTaiwan.org, robotics, arduino, full stack, data analytics">
-    <meta name="description" content="codeTaiwan.org">
-    <title>codeTaiwan.org</title><!-- Bootstrap -->
-    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet"><!-- font awesome for icons -->
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet"><!-- flex slider css -->
-    <link href="css/flexslider.css" media="screen" rel="stylesheet" type="text/css"><!-- animated css  -->
-    <link href="css/animate.css" media="screen" rel="stylesheet" type="text/css"><!-- Revolution Style-sheet -->
-    <link href="rs-plugin/css/settings.css" rel="stylesheet" type="text/css">
-    <link href="css/rev-style.css" rel="stylesheet" type="text/css"><!--owl carousel css-->
-    <link href="owl-carousel/assets/owl.carousel.css" media="screen" rel="stylesheet" type="text/css">
-    <link href="owl-carousel/assets/owl.theme.default.css" media="screen" rel="stylesheet" type="text/css"><!--mega menu -->
-    <link href="css/yamm.css" rel="stylesheet" type="text/css"><!--cube css-->
-    <link href="cubeportfolio/css/cubeportfolio.min.css" rel="stylesheet" type="text/css"><!-- custom css-->
-    <link href="css/style.css" media="screen" rel="stylesheet" type="text/css">
-    <link href="css/everydaykenneth.css" media="screen" rel="stylesheet" type="text/css">
+	<meta charset="utf-8">
+	<meta content="IE=edge" http-equiv="X-UA-Compatible">
+	<meta content="width=device-width, initial-scale=1" name="viewport">
+	<meta content="EveryDayKenneth" name="author">
+	<meta content="codeTaiwan.org, robotics, arduino, full stack, data analytics" name="keywords">
+	<meta content="codeTaiwan.org" name="description">
+	<title>codeTaiwan.org</title><!-- Bootstrap -->
+	<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet"><!-- font awesome for icons -->
+	<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet"><!-- flex slider css -->
+	<link href="css/flexslider.css" media="screen" rel="stylesheet" type="text/css"><!-- animated css  -->
+	<link href="css/animate.css" media="screen" rel="stylesheet" type="text/css"><!-- Revolution Style-sheet -->
+	<link href="rs-plugin/css/settings.css" rel="stylesheet" type="text/css">
+	<link href="css/rev-style.css" rel="stylesheet" type="text/css"><!--owl carousel css-->
+	<link href="owl-carousel/assets/owl.carousel.css" media="screen" rel="stylesheet" type="text/css">
+	<link href="owl-carousel/assets/owl.theme.default.css" media="screen" rel="stylesheet" type="text/css"><!--mega menu -->
+	<link href="css/yamm.css" rel="stylesheet" type="text/css"><!--cube css-->
+	<link href="cubeportfolio/css/cubeportfolio.min.css" rel="stylesheet" type="text/css"><!-- custom css-->
+	<link href="css/style.css" media="screen" rel="stylesheet" type="text/css">
+	<link href="css/everydaykenneth.css" media="screen" rel="stylesheet" type="text/css">
 </head>
 <body>
-    <div class="top-bar-dark">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-4 hidden-xs">
-                </div>
-                <div class="col-sm-8 text-right">
-                    <ul class="list-inline top-dark-right">
-                        <li>
-                            <a href="coming-soon.html"><i class="fa fa-language"></i> 中文</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div><!--top-bar-dark end here-->
-    <!--navigation -->
-    <!-- Static navbar -->
-    <div class="navbar navbar-default navbar-static-top yamm sticky" role="navigation">
-        <div class="container">
-            <div class="navbar-header">
-                <button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse" type="button"><span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span></button> <a class="navbar-brand" href="index.html"><img alt="codeTaiwan" src="img/logoCodeTaiwan.jpg"></a>
-            </div>
-            <!-- begin navigation section -->
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="dropdown active">
-                        <a class="dropdown-toggle" href="index.html">Home</a>
-                    </li>
-                    <!--menu home li end here-->
-                    <li class="dropdown">
-                        <a class="dropdown-toggle" href="about.html">About</a>
-                    </li>
-                    <!--menu about li end here-->
-                    <!-- <li class="dropdown">
+	<div class="top-bar-dark">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-4 hidden-xs"></div>
+				<div class="col-sm-8 text-right">
+					<ul class="list-inline top-dark-right">
+						<li>
+							<a href="index-en.html"><i class="fa fa-language"></i>English</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div><!--top-bar-dark end here-->
+	<!--navigation -->
+	<!-- Static navbar -->
+	<div class="navbar navbar-default navbar-static-top yamm sticky" role="navigation">
+		<div class="container">
+			<div class="navbar-header">
+				<button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse" type="button"><span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span></button> <a class="navbar-brand" href="index.html"><img alt="codeTaiwan" src="img/logoCodeTaiwan.jpg"></a>
+			</div><!-- begin navigation section -->
+			<div class="navbar-collapse collapse">
+				<ul class="nav navbar-nav navbar-right">
+					<li class="dropdown active">
+						<a class="dropdown-toggle" href="index.html">首頁</a>
+					</li><!--menu home li end here-->
+					<li class="dropdown">
+						<a class="dropdown-toggle" href="about.html">關於我們</a>
+					</li><!--menu about li end here-->
+					<!-- <li class="dropdown">
                         <a class="dropdown-toggle" href="courses.html">Courses</a>
                     </li> -->
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Services <i class="fa fa-angle-down"></i></a>
-                        <ul class="dropdown-menu" role="menu">
-                            <li><a href="courses.html">Courses</a></li>
-                            <li><a href="tutoring.html">Tutoring</a></li>
-                        </ul>
-                    </li>
-                    <!--menu courses li end here-->
-                    <li class="dropdown">
-                        <a class="dropdown-toggle" href="news.html">News</a>
-                    </li>
-                    <!--menu news li end here-->
-                    <li class="dropdown">
-                        <a class="dropdown-toggle" href="contact.html">Contact</a>
-                    </li>
-                    <!--menu contact li end here-->
-                </ul>
-            </div>
-        </div>
-        <!--container-->
-    </div>
-    <!--end navigation bar-->
-    <!--rev slider start-->
-    <div class="fullwidthbanner">
-        <div class="tp-banner">
-            <ul>
-                <!-- SLIDE -->
-                <li data-masterspeed="1000" data-slotamount="5" data-title="Who We Are" data-transition="fade">
-                    <!-- MAIN IMAGE -->
-                    <img alt="darkblurbg" data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat" src="img/placeholder1.jpg">
-                    <div class="caption title-2 sft" data-easing="easeOutExpo" data-speed="1000" data-start="1000" data-x="50" data-y="160">
-                        We teach coding<br>
-                        in English
-                    </div>
-                    <div class="caption text sfl" data-easing="easeOutExpo" data-speed="1000" data-start="1800" data-x="50" data-y="290">
-                        Computers love our English grammar &amp; accent.<br>
-                    </div>
-                    <div class="caption sfb rev-buttons tp-resizeme" data-easing="Sine.easeOut" data-speed="500" data-start="1800" data-x="50" data-y="360">
-                        <a class="btn btn-theme-bg btn-lg" href="contact.html">Contact Us</a>
-                    </div>
-<!--                     <div class="caption sfb rev-buttons tp-resizeme" data-easing="Sine.easeOut" data-speed="500" data-start="2100" data-x="250" data-y="360">
-                        <a class="btn border-white btn-lg" href="#">View features</a>
-                    </div> -->
-                </li><!-- SLIDE -->
-                <li data-masterspeed="1000" data-slotamount="5" data-title="What We Love To Do" data-transition="fade">
-                    <!-- MAIN IMAGE -->
-                    <img alt="darkblurbg" data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat" src="img/placeholder2.jpg">
-                    <div class="caption text-center-top sft" data-easing="easeOutExpo" data-speed="1000" data-start="1400" data-x="center" data-y="210">
-                        Learn to code with us
-                    </div>
-                    <div class="caption text-center-btm sfr text-center" data-easing="easeOutExpo" data-speed="1000" data-start="1600" data-x="center" data-y="265">
-                        We instill a passion for learning technology<br>
-                    </div>
-                    <div class="caption sfb rev-buttons tp-resizeme" data-easing="Sine.easeOut" data-speed="500" data-start="1800" data-x="center" data-y="350">
-                        <a class="btn border-white btn-lg" href="courses.html">View Our Courses</a>
-                    </div>
-                </li><!-- SLIDE -->
-                <li data-masterspeed="1000" data-slotamount="5" data-title="Our Courses" data-transition="fade">
-                    <!-- MAIN IMAGE -->
-                    <img alt="darkblurbg" data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat" src="img/placeholder3.jpg"> <!-- LAYER NR. 1 -->
-                    <div class="caption left-tile-text sfr tp-resizeme" data-end="9400" data-endspeed="600" data-speed="600" data-start="1200" data-x="40" data-y="110">
-                        Our Tech Specialties
-                    </div><!-- LAYER NR. 2 -->
-                    <div class="caption medium_bg_darkblue sfl medium tp-resizeme" data-end="9400" data-endspeed="600" data-speed="600" data-start="1600" data-x="40" data-y="170">
-                        <i class="fa fa-check"></i>
-                    </div><!-- LAYER NR. 3 -->
-                    <div class="caption modern_big_redbg sfb medium tp-resizeme" data-end="9400" data-endspeed="600" data-speed="600" data-start="1600" data-x="90" data-y="170">
-                        Robotics
-                    </div><!-- LAYER NR. 4 -->
-                    <div class="caption medium_bg_darkblue sfl medium tp-resizeme" data-end="9400" data-endspeed="600" data-speed="600" data-start="1800" data-x="40" data-y="220">
-                        <i class="fa fa-check"></i>
-                    </div><!-- LAYER NR. 5 -->
-                    <div class="caption modern_big_redbg sfb medium tp-resizeme" data-end="9400" data-endspeed="600" data-speed="600" data-start="1800" data-x="90" data-y="220">
-                        Arduino
-                    </div><!-- LAYER NR. 6 -->
-                    <div class="caption medium_bg_darkblue sfl medium tp-resizeme" data-end="9400" data-endspeed="600" data-speed="600" data-start="2000" data-x="40" data-y="270">
-                        <i class="fa fa-check"></i>
-                    </div><!-- LAYER NR. 7 -->
-                    <div class="caption modern_big_redbg sfb medium tp-resizeme" data-end="9400" data-endspeed="600" data-speed="600" data-start="2000" data-x="90" data-y="270">
-                        Full Stack Web Development
-                    </div><!-- LAYER NR. 8 -->
-                    <div class="caption medium_bg_darkblue sfl medium tp-resizeme" data-end="9400" data-endspeed="600" data-speed="600" data-start="2200" data-x="40" data-y="320">
-                        <i class="fa fa-check"></i>
-                    </div><!-- LAYER NR. 9 -->
-                    <div class="caption modern_big_redbg sfb medium tp-resizeme" data-end="9400" data-endspeed="600" data-speed="600" data-start="2200" data-x="90" data-y="320">
-                        Data Analytics
-                    </div><!-- LAYER NR. 10 -->
-                    <div class="caption modern_big_redbg sfb medium tp-resizeme" data-end="9400" data-endspeed="600" data-speed="600" data-start="2400" data-x="40" data-y="370">
-                        And Much More...
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </div><!--full width banner-->
-    <!--revolution end-->
-    <div class="divide60">
-    </div>
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-8 col-sm-offset-2">
-                <div class="center-heading">
-                    <h2>What <strong>we do</strong></h2><span class="center-line"></span>
-                    <p class="sub-text margin40">Our mission is to impact our community through our passion for teaching and technology; to change how we approach education in the 21st century.</p>
-                </div>
-            </div>
-        </div>
-        <!--center heading end-->
-        <div class="divide50"></div>
-        <div class="row">
-            <div class="col-md-3 col-sm-6 margin30">
-                <div class="colored-boxed green">
-                    <i class="pe-7s-smile"></i>
-                    <h3>Fun With Coding for Kids</h3><span class="center-line"></span>
-                    <p>Learn to read &amp; speak English, think like a computer, and gain emotional intelligence.</p>
-                </div>
-            </div>
-            <!--colored boxed col end-->
-            <div class="col-md-3 col-sm-6 margin30">
-                <div class="colored-boxed dark">
-                    <i class="pe-7s-tools"></i>
-                    <h3>Intro to Programming</h3><span class="center-line"></span>
-                    <p>Build cool projects with HTML, CSS, Javascript, jQuery, and Python.</p>
-                </div>
-            </div>
-            <!--colored boxed col end-->
-            <div class="col-md-3 col-sm-6 margin30">
-                <div class="colored-boxed blue">
-                    <i class="pe-7s-browser"></i>
-                    <h3>Full Stack Web Development</h3><span class="center-line"></span>
-                    <p>Learn front and back end web development with professional programmers. Build a portfolio and change your career.</p>
-                </div>
-            </div>
-            <!--colored boxed col end-->
-            <div class="col-md-3 col-sm-6 margin30">
-                <div class="colored-boxed red">
-                    <i class="pe-7s-network"></i>
-                    <h3>Digital Marketing</h3><span class="center-line"></span>
-                    <p>Learn to brand your product or service and share it through digital media outlets.</p>
-                </div>
-            </div>
-            <!--colored boxed col end-->
-        </div>
-        </div>
-        <!--services container-->
-    <div class="divide80"></div>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="center-heading">
-                    <h2>Our <strong>Tech Specialties</strong></h2><span class="center-line"></span>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="container">
-        <div class="cube-masonry">
-            <div class="cbp-l-filters-alignCenter" id="filters-container">
-                <!-- <div class="cbp-filter-item-active cbp-filter-item" data-filter="*">
-                    All
-                    <div class="cbp-filter-counter"></div>
-                </div>
-                <div class="cbp-filter-item" data-filter=".funWithCoding">
-                    Fun With Coding
-                    <div class="cbp-filter-counter"></div>
-                </div>
-                <div class="cbp-filter-item" data-filter=".introToProgramming">
-                    Intro to Programming
-                    <div class="cbp-filter-counter"></div>
-                </div>
-                <div class="cbp-filter-item" data-filter=".fullStack">
-                    Full Stack Web Development
-                    <div class="cbp-filter-counter"></div>
-                </div>
-                <div class="cbp-filter-item" data-filter=".digitalMarketing">
-                    Digital Marketing
-                    <div class="cbp-filter-counter"></div>
-                </div> -->
-            </div>
-            <div class="cbp" id="masnory-container">
-                <div class="cbp-item funWithCoding">
-                    <a class="cbp-caption" data-title="Easy Note&lt;br&gt;by Cosmin Capitanu" href="funWithCoding.html">
-                    <div class="cbp-caption-defaultWrap"><img alt="" src="img/simpsons82.jpg"></div>
-                    <div class="cbp-caption-activeWrap">
-                        <div class="cbp-l-caption-alignCenter">
-                            <div class="cbp-l-caption-body">
-                                <div class="cbp-l-caption-title">
-                                    Fun with Coding
-                                </div>
-                                <div class="cbp-l-caption-desc">
-                                    by codeTaiwan.org
-                                </div>
-                            </div>
-                        </div>
-                    </div></a>
-                </div>
-                <div class="cbp-item introToProgramming">
-                    <a class="cbp-caption" data-title="The Gang Blue&lt;br&gt;by Cosmin Capitanu" href="introToProgramming.html">
-                    <div class="cbp-caption-defaultWrap"><img alt="" src="img/simpsons82.jpg"></div>
-                    <div class="cbp-caption-activeWrap">
-                        <div class="cbp-l-caption-alignCenter">
-                            <div class="cbp-l-caption-body">
-                                <div class="cbp-l-caption-title">
-                                    Intro to Programming
-                                </div>
-                                <div class="cbp-l-caption-desc">
-                                    by codeTaiwan.org
-                                </div>
-                            </div>
-                        </div>
-                    </div></a>
-                </div>
-                <div class="cbp-item fullStack">
-                    <a class="cbp-caption" data-title="Full Stack Web Development&lt;br&gt;by codeTaiwan.org" href="fullstack.html">
-                    <div class="cbp-caption-defaultWrap"><img alt="Full Stack Developer" src="img/fullStack.png"></div>
-                    <div class="cbp-caption-activeWrap">
-                        <div class="cbp-l-caption-alignCenter">
-                            <div class="cbp-l-caption-body">
-                                <div class="cbp-l-caption-title">
-                                    Full Stack Web Development
-                                </div>
-                                <div class="cbp-l-caption-desc">
-                                    by codeTaiwan.org
-                                </div>
-                            </div>
-                        </div>
-                    </div></a>
-                </div>
-                <div class="cbp-item digitalMarketing">
-                  <a class="cbp-caption" data-title="Digital Marketing &lt;br&gt;by codeTaiwan.org" href="digitalmarketing.html">
-                    <div class="cbp-caption-defaultWrap"><img alt="Digital Marketing" src="img/digitalMarketing.jpg"></div>
-                      <div class="cbp-caption-activeWrap">
-                        <div class="cbp-l-caption-alignCenter">
-                            <div class="cbp-l-caption-body">
-                                <div class="cbp-l-caption-title">
-                                    Digital Marketing
-                                </div>
-                                <div class="cbp-l-caption-desc">
-                                    by codeTaiwan.org
-                                </div>
-                            </div>
-                        </div>
-                    </div></a>
-                </div>
-            </div>
-        </div><!--.cube masonry-->
-    </div>
-    <div class="divide50"></div>
-    <div class="text-center">
-        <a class="btn btn-theme-dark btn-lg" href="courses.html">View All Courses</a>
-    </div>
-    <div class="divide50"></div>
-    <div class="wide-img-showcase">
-        <div class="row margin-0 wide-img-showcase-row">
-            <div class="col-sm-6 no-padding img-2">
-                <div class="no-padding-inner">
-                    <div>
-                        &nbsp;
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-6 col-sm-offset-6 no-padding gray">
-                <div class="no-padding-inner gray">
-                    <h3 class="wow animated fadeInDownfadeInRight"><span class="colored-text">codetaiwan.org</span></h3>
-                    <div class="services-box margin30 wow animated fadeInRight">
-                        <div class="services-box-icon">
-                            <i class="fa fa-users"></i>
-                        </div><!--services icon-->
-                        <div class="services-box-info">
-                            <h4>Learn English and Coding</h4>
-                            <p>All of our tech classes are taught by native English speakers.</p>
-                        </div>
-                    </div><!--service box-->
-                    <div class="services-box margin30 wow animated fadeInRight">
-                        <div class="services-box-icon">
-                            <i class="fa fa-university"></i>
-                        </div><!--services icon-->
-                        <div class="services-box-info">
-                            <h4>Learn from professional teachers and programmers</h4>
-                            <p>Work together to build projects and add them your professional portfolio</p>
-                        </div>
-
-                    </div><!--service box-->
-                    <div class="services-box margin30 wow animated fadeInRight">
-                        <div class="services-box-icon">
-                            <i class="fa fa-graduation-cap"></i>
-                        </div><!--services icon-->
-                        <div class="services-box-info">
-                            <h4>Be prepared for the future</h4>
-                            <p>Learn the skills of tomorrow, today</p>
-                        </div>
-                        <div class="divide30"></div>
-                        <p><a class="btn btn-theme-dark btn-lg" href="contact.html">Contact Us</a></p>
-                    </div><!--service box-->
-                </div>
-            </div>
-        </div>
-    </div><!--wide image showcase end-->
-    <section class="fun-fact-wrap fun-facts-bg">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3 margin20 facts-in">
-                    <h3><span class="counter">7823</span> +</h3>
-                    <h4>Hours Taught</h4>
-                </div><!--facts in-->
-                <div class="col-md-3 margin20 facts-in">
-                    <h3><span class="counter">10000</span> +</h3>
-                    <h4>Programming Hours</h4>
-                </div><!--facts in-->
-                <div class="col-md-3 margin20 facts-in">
-                    <h3><span class="counter">975</span> +</h3>
-                    <h4>Projects Completed</h4>
-                </div><!--facts in-->
-                <div class="col-md-3 margin20 facts-in">
-                    <h3><span class="counter">325</span> +</h3>
-                    <h4>Happy Students</h4>
-                </div><!--facts in-->
-            </div>
-        </div>
-    </section><!--fun facts-->
-
-    <div class="our-team-v-2">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="center-heading">
-                        <h2>Our <strong>Team</strong></h2><span class="center-line"></span>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-4 text-center">
-                    <div class="person-v2">
-                        <img alt="" class="img-responsive" src="img/chrisLo.jpg">
-                        <div class="person-desc-v2">
-                            <h3>Chris<br> Lo</h3><em>CEO / Co-founder</em>
-                            <ul class="list-inline top-social">
-                              <li>
-                                  <a href="#" class="social-icon-sm si-border si-facebook">
-                                      <i class="fa fa-facebook"></i>
-                                      <i class="fa fa-facebook"></i>
-                                  </a>
-                              </li>
-                              <li>
-                                  <a href="#" class="social-icon-sm si-border si-linkedin">
-                                      <i class="fa fa-linkedin"></i>
-                                      <i class="fa fa-linkedin"></i>
-                                  </a>
-                              </li>
-                              <li>
-                                  <a href="#" class="social-icon-sm si-border si-linkedin">
-                                      <i class="fa fa-instagram"></i>
-                                      <i class="fa fa-instagram"></i>
-                                  </a>
-                              </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div><!--person col end-->
-                <div class="col-sm-4 text-center">
-                    <div class="person-v2">
-                        <img alt="" class="img-responsive" src="img/kennethChang.jpg">
-                        <div class="person-desc-v2">
-                            <h3>Kenneth <br>Chang</h3><em>CTO / Co-founder</em>
-                            <ul class="list-inline top-social">
-                              <li>
-                                  <a href="#" class="social-icon-sm si-border si-facebook">
-                                      <i class="fa fa-facebook"></i>
-                                      <i class="fa fa-facebook"></i>
-                                  </a>
-                              </li>
-                              <li>
-                                  <a href="#" class="social-icon-sm si-border si-linkedin">
-                                      <i class="fa fa-linkedin"></i>
-                                      <i class="fa fa-linkedin"></i>
-                                  </a>
-                              </li>
-                              <li>
-                                  <a href="#" class="social-icon-sm si-border si-linkedin">
-                                      <i class="fa fa-instagram"></i>
-                                      <i class="fa fa-instagram"></i>
-                                  </a>
-                              </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div><!--person col end-->
-                <div class="col-sm-4 text-center">
-                    <div class="person-v2">
-                        <img alt="" class="img-responsive" src="img/team-7.jpg">
-                        <div class="person-desc-v2">
-                            <h3>Robbie <br>Doyen</h3><em>President</em>
-                            <ul class="list-inline top-social">
-                              <li>
-                                  <a href="#" class="social-icon-sm si-border si-facebook">
-                                      <i class="fa fa-facebook"></i>
-                                      <i class="fa fa-facebook"></i>
-                                  </a>
-                              </li>
-                              <li>
-                                  <a href="#" class="social-icon-sm si-border si-linkedin">
-                                      <i class="fa fa-linkedin"></i>
-                                      <i class="fa fa-linkedin"></i>
-                                  </a>
-                              </li>
-                              <li>
-                                  <a href="#" class="social-icon-sm si-border si-linkedin">
-                                      <i class="fa fa-instagram"></i>
-                                      <i class="fa fa-instagram"></i>
-                                  </a>
-                              </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div><!--person col end-->
-            </div>
-        </div>
-    </div><!--our team v-2-->
-    <div class="divide70"></div>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="center-heading">
-                    <h2><strong>latest</strong> news</h2><span class="center-line"></span>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-4 margin30">
-                <div>
-                    <a href="http://www.director.co.uk/coding-the-skill-you-need-to-learn-22003-2/" target="_blank">
-                    <div class="item-img-wrap">
-                        <img alt="binary code" class="img-responsive" src="img/ukcodingsmall.png">
-                        <div class="item-img-overlay">
-                            <span></span>
-                        </div>
-                    </div></a><!--news link-->
-                    <div class="news-desc">
-                        <span>Coding News</span>
-                        <h4><a href="http://www.director.co.uk/coding-the-skill-you-need-to-learn-22003-2/" target="_blank">Coding: the skill you need to learn</a></h4><span>By Nick Scott on 31 May 2017</span> <span><a href="http://www.director.co.uk/coding-the-skill-you-need-to-learn-22003-2/" target="_blank">Read more...</a></span>
-                    </div><!--news desc-->
-                </div>
-            </div><!--news col-->
-            <div class="col-sm-4 margin30">
-                <div>
-                    <a href="https://techcrunch.com/2017/05/24/apple-targets-community-college-students-with-new-swift-development-course/" target="_blank">
-                    <div class="item-img-wrap">
-                        <img alt="workimg" class="img-responsive" src="img/news2.jpg">
-                        <div class="item-img-overlay">
-                            <span></span>
-                        </div>
-                    </div></a><!--news link-->
-                    <div class="news-desc">
-                        <span>Swift Programming</span>
-                        <h4><a href="https://techcrunch.com/2017/05/24/apple-targets-community-college-students-with-new-swift-development-course/" target="_blank">Apple targets community college students with new a Swift coding course</a></h4><span>By Brian Heater on 24 May 2017</span> <span><a href="https://techcrunch.com/2017/05/24/apple-targets-community-college-students-with-new-swift-development-course/" target="_blank">Read more...</a></span>
-                    </div><!--news desc-->
-                </div>
-            </div><!--news col-->
-            <div class="col-sm-4 margin30">
-                <div>
-                    <a href="https://techcrunch.com/2017/05/04/this-diy-google-home-uses-raspberry-pi-and-cardboard-to-make-the-magic-happen/" target="_blank">
-                    <div class="item-img-wrap">
-                        <img alt="workimg" class="img-responsive" src="img/news3.jpg">
-                        <div class="item-img-overlay">
-                            <span></span>
-                        </div>
-                    </div></a><!--news link-->
-                    <div class="news-desc">
-                        <span>Artificial Intelligence</span>
-                        <h4><a href="https://techcrunch.com/2017/05/04/this-diy-google-home-uses-raspberry-pi-and-cardboard-to-make-the-magic-happen/" target="_blank">This DIY Google Home uses Raspberry Pi and cardboard to make the magic happen</a></h4><span>By Darrell Etherington on 04 May 2017</span> <span><a href="https://techcrunch.com/2017/05/04/this-diy-google-home-uses-raspberry-pi-and-cardboard-to-make-the-magic-happen/" target="_blank">Read more...</a></span>
-                    </div><!--news desc-->
-                </div>
-            </div><!--news col-->
-        </div>
-    </div><!--latest news-->
-
-
-    <!--intro text end-->
-        <footer id="footer">
-            <div class="container">
-
-                <div class="row">
-                    <div class="col-md-4 col-sm-6 margin30">
-                        <div class="footer-col">
-                            <h3>About codeTaiwan</h3>
-                            <p>
-Our mission is to impact our global community through education and technology moving together into the future.
-                            </p>
-                            <ul class="list-inline footer-social">
-                                <li>
-                                    <a href="#" class="social-icon si-dark si-gray-round si-colored-facebook">
-                                        <i class="fa fa-facebook"></i>
-                                        <i class="fa fa-facebook"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" class="social-icon si-dark si-gray-round si-colored-linkedin">
-                                        <i class="fa fa-linkedin"></i>
-                                        <i class="fa fa-linkedin"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" class="social-icon si-dark si-gray-round si-colored-instagram">
-                                        <i class="fa fa-instagram"></i>
-                                        <i class="fa fa-instagram"></i>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div><!--footer col-->
-                    <div class="col-md-4 col-sm-6 margin30">
-                        <div class="footer-col">
-                            <h3>Contact</h3>
-                            <ul class="list-unstyled contact">
-
-
-                                <li><p><strong><i class="fa fa-map-marker"></i> Address:</strong>No. 210, Section 3, Roosevelt Rd, Zhongzheng District
-Taipei City, Taiwan 100</p></li>
-                                <li><p><strong><i class="fa fa-envelope"></i> Mail Us:</strong> <a href="#">info@codeTaiwan.org</a></p></li>
-                                <li> <p><strong><i class="fa fa-phone"></i> Phone:</strong> +886 979 404 569</p></li>
-                            </ul>
-                        </div>
-                    </div><!--footer col-->
-
-                    <div class="col-md-4 col-sm-6 margin30">
-                        <div class="footer-col">
-                            <h3>Newsletter</h3>
-                            <p>
-                                Subscribe to stay in touch with the latest in tech news and our events.
-                            </p>
-                            <form role="form" class="subscribe-form">
-                                <div class="input-group">
-                                    <input type="text" class="form-control" placeholder="Enter email to subscribe">
-                                    <span class="input-group-btn">
-                                        <button class="btn  btn-theme-dark btn-lg" type="submit">Ok</button>
-                                    </span>
-                                </div>
-                            </form>
-                        </div>
-                    </div><!--footer col-->
-            </div>
-            <div class="row">
-                <div class="col-md-12 text-center">
-                    <div class="footer-btm">
-                        &copy;2017 codeTaiwan.org
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer><!--default footer end here-->
-    <!--scripts and plugins -->
-    <!--must need plugin jquery-->
-    <script src="js/jquery.min.js">
-    </script>
-    <script src="js/jquery-migrate.min.js">
-    </script> <!--bootstrap js plugin-->
-
-    <script src="bootstrap/js/bootstrap.min.js" type="text/javascript">
-    </script> <!--easing plugin for smooth scroll-->
-
-    <script src="js/jquery.easing.1.3.min.js" type="text/javascript">
-    </script> <!--sticky header-->
-
-    <script src="js/jquery.sticky.js" type="text/javascript">
-    </script> <!--flex slider plugin-->
-
-    <script src="js/jquery.flexslider-min.js" type="text/javascript">
-    </script> <!--parallax background plugin-->
-
-    <script src="js/jquery.stellar.min.js" type="text/javascript">
-    </script> <!--digit countdown plugin-->
-
-    <script src="//cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
-
-    <script src="js/jquery.counterup.min.js" type="text/javascript">
-    </script> <!--on scroll animation-->
-
-    <script src="js/wow.min.js" type="text/javascript">
-    </script> <!--owl carousel slider-->
-
-    <script src="owl-carousel/owl.carousel.min.js" type="text/javascript">
-    </script> <!--popup js-->
-
-    <script src="js/jquery.magnific-popup.min.js" type="text/javascript">
-    </script> <!--customizable plugin edit according to your needs-->
-
-    <script src="js/custom.js" type="text/javascript">
-    </script>
-    <script src="rs-plugin/js/jquery.themepunch.tools.min.js" type="text/javascript">
-    </script>
-    <script src="rs-plugin/js/jquery.themepunch.revolution.min.js" type="text/javascript">
-    </script>
-    <script src="js/revolution-custom.js" type="text/javascript">
-    </script> <!--cube portfolio plugin-->
-
-    <script src="cubeportfolio/js/jquery.cubeportfolio.min.js" type="text/javascript">
-    </script>
-    <script src="js/cube-portfolio.js" type="text/javascript">
-    </script>
-    <script src="js/pace.min.js" type="text/javascript">
-    </script>
+					<li class="dropdown">
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#">服务<i class="fa fa-angle-down"></i></a>
+						<ul class="dropdown-menu" role="menu">
+							<li>
+								<a href="courses.html">培训班</a>
+							</li>
+							<li>
+								<a href="tutoring.html">家教</a>
+							</li>
+						</ul>
+					</li><!--menu courses li end here-->
+					<li class="dropdown">
+						<a class="dropdown-toggle" href="news.html">新聞</a>
+					</li><!--menu news li end here-->
+					<li class="dropdown">
+						<a class="dropdown-toggle" href="contact.html">聯繫我們</a>
+					</li><!--menu contact li end here-->
+				</ul>
+			</div>
+		</div><!--container-->
+	</div><!--end navigation bar-->
+	<!--rev slider start-->
+	<div class="fullwidthbanner">
+		<div class="tp-banner">
+			<ul>
+				<!-- SLIDE -->
+				<li data-masterspeed="1000" data-slotamount="5" data-title="Who We Are" data-transition="fade">
+					<!-- MAIN IMAGE -->
+					<img alt="darkblurbg" data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat" src="img/robbiedoyen_banner1.png">
+					<div class="caption sfb rev-buttons tp-resizeme" data-easing="Sine.easeOut" data-speed="500" data-start="1800" data-x="50" data-y="360">
+						<a class="btn btn-theme-bg btn-lg" href="contact.html">聯繫我們</a>
+					</div>
+				</li><!-- SLIDE -->
+				<li data-masterspeed="1000" data-slotamount="5" data-title="What We Love To Do" data-transition="fade"><!-- MAIN IMAGE -->
+				<img alt="darkblurbg" data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat" src="img/robbiedoyen_banner2.png"></li><!-- SLIDE -->
+				<li data-masterspeed="1000" data-slotamount="5" data-title="Our Courses" data-transition="fade">
+					<!-- MAIN IMAGE -->
+					<img alt="darkblurbg" data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat" src="img/robbiedoyen_banner3.png"> <!-- LAYER NR. 1 -->
+					<div class="caption sfb rev-buttons tp-resizeme" data-easing="Sine.easeOut" data-speed="500" data-start="1800" data-x="50" data-y="360">
+						<a class="btn btn-theme-bg btn-lg" href="contact.html">聯繫我們</a>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div><!--full width banner-->
+	<!--revolution end-->
+	<div class="divide60"></div>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-8 col-sm-offset-2">
+				<div class="center-heading">
+					<h2>我們所做的</h2><span class="center-line"></span>
+					<p class="sub-text margin40">我們的使命是通過我們對教學和技術的熱情影響我們的社區; 改變我們如何接近二十一世紀的教育。</p>
+				</div>
+			</div>
+		</div><!--center heading end-->
+		<div class="divide50"></div>
+		<div class="row">
+			<div class="col-md-3 col-sm-6 margin30">
+				<div class="colored-boxed green">
+					<i class="pe-7s-smile"></i>
+					<h3>快樂的孩子編碼</h3><span class="center-line"></span>
+					<p>學習閱讀和說英語，像電腦一樣思考，並獲得情感智力。</p>
+				</div>
+			</div><!--colored boxed col end-->
+			<div class="col-md-3 col-sm-6 margin30">
+				<div class="colored-boxed dark">
+					<i class="pe-7s-tools"></i>
+					<h3>引導編程</h3><span class="center-line"></span>
+					<p>使用HTML，CSS，Javascript，jQuery和Python構建酷炫項目</p>
+				</div>
+			</div><!--colored boxed col end-->
+			<div class="col-md-3 col-sm-6 margin30">
+				<div class="colored-boxed blue">
+					<i class="pe-7s-browser"></i>
+					<h3>全堆棧網絡開發</h3><span class="center-line"></span>
+					<p>學習專業程序員的前端和後端Web開發。 建立投資組合併改變你的職業生涯。</p>
+				</div>
+			</div><!--colored boxed col end-->
+			<div class="col-md-3 col-sm-6 margin30">
+				<div class="colored-boxed red">
+					<i class="pe-7s-network"></i>
+					<h3>數字營銷</h3><span class="center-line"></span>
+					<p>學習品牌您的產品或服務，並通過數字媒體分享。</p>
+				</div>
+			</div><!--colored boxed col end-->
+		</div>
+	</div><!--services container-->
+	<div class="divide80"></div>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="center-heading">
+					<h2>我們的技術專長</h2><span class="center-line"></span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="cube-masonry">
+			<div class="cbp-l-filters-alignCenter" id="filters-container"></div>
+			<div class="cbp" id="masnory-container">
+				<div class="cbp-item funWithCoding">
+					<a class="cbp-caption" data-title="Easy Note&lt;br&gt;by Cosmin Capitanu" href="funWithCoding.html">
+					<div class="cbp-caption-defaultWrap"><img alt="" src="img/robbiedoyen_class1.png"></div>
+					<div class="cbp-caption-activeWrap">
+						<div class="cbp-l-caption-alignCenter">
+							<div class="cbp-l-caption-body">
+								<div class="cbp-l-caption-title">
+									快樂的孩子編碼
+								</div>
+								<div class="cbp-l-caption-desc">
+									by codeTaiwan.org
+								</div>
+							</div>
+						</div>
+					</div></a>
+				</div>
+				<div class="cbp-item introToProgramming">
+					<a class="cbp-caption" data-title="The Gang Blue&lt;br&gt;by Cosmin Capitanu" href="introToProgramming.html">
+					<div class="cbp-caption-defaultWrap"><img alt="" src="img/robbiedoyen_class2.png"></div>
+					<div class="cbp-caption-activeWrap">
+						<div class="cbp-l-caption-alignCenter">
+							<div class="cbp-l-caption-body">
+								<div class="cbp-l-caption-title">
+									引導編程
+								</div>
+								<div class="cbp-l-caption-desc">
+									by codeTaiwan.org
+								</div>
+							</div>
+						</div>
+					</div></a>
+				</div>
+				<div class="cbp-item fullStack">
+					<a class="cbp-caption" data-title="Full Stack Web Development&lt;br&gt;by codeTaiwan.org" href="fullstack.html">
+					<div class="cbp-caption-defaultWrap"><img alt="Full Stack Developer" src="img/robbiedoyen_class3.png"></div>
+					<div class="cbp-caption-activeWrap">
+						<div class="cbp-l-caption-alignCenter">
+							<div class="cbp-l-caption-body">
+								<div class="cbp-l-caption-title">
+									全堆棧網絡開發
+								</div>
+								<div class="cbp-l-caption-desc">
+									by codeTaiwan.org
+								</div>
+							</div>
+						</div>
+					</div></a>
+				</div>
+				<div class="cbp-item digitalMarketing">
+					<a class="cbp-caption" data-title="Digital Marketing &lt;br&gt;by codeTaiwan.org" href="digitalmarketing.html">
+					<div class="cbp-caption-defaultWrap"><img alt="Digital Marketing" src="img/robbiedoyen_class4.png"></div>
+					<div class="cbp-caption-activeWrap">
+						<div class="cbp-l-caption-alignCenter">
+							<div class="cbp-l-caption-body">
+								<div class="cbp-l-caption-title">
+									數字營銷
+								</div>
+								<div class="cbp-l-caption-desc">
+									by codeTaiwan.org
+								</div>
+							</div>
+						</div>
+					</div></a>
+				</div>
+			</div>
+		</div><!--.cube masonry-->
+	</div>
+	<div class="divide50"></div>
+	<div class="text-center">
+		<a class="btn btn-theme-dark btn-lg" href="courses.html">查看所有課程</a>
+	</div>
+	<div class="divide50"></div>
+	<div class="wide-img-showcase">
+		<div class="row margin-0 wide-img-showcase-row">
+			<div class="col-sm-6 no-padding img-2">
+				<div class="no-padding-inner">
+					<div>
+						&nbsp;
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-6 col-sm-offset-6 no-padding gray">
+				<div class="no-padding-inner gray">
+					<h3 class="wow animated fadeInDownfadeInRight"><span class="colored-text">codetaiwan.org</span></h3>
+					<div class="services-box margin30 wow animated fadeInRight">
+						<div class="services-box-icon">
+							<i class="fa fa-users"></i>
+						</div><!--services icon-->
+						<div class="services-box-info">
+							<h4>了解英文和編碼</h4>
+							<p>我們所有的技術課程都是以英語為母語的</p>
+						</div>
+					</div><!--service box-->
+					<div class="services-box margin30 wow animated fadeInRight">
+						<div class="services-box-icon">
+							<i class="fa fa-university"></i>
+						</div><!--services icon-->
+						<div class="services-box-info">
+							<h4>從專業教師和程序員的學習</h4>
+							<p>合作建立項目，並添加您的專業組合</p>
+						</div>
+					</div><!--service box-->
+					<div class="services-box margin30 wow animated fadeInRight">
+						<div class="services-box-icon">
+							<i class="fa fa-graduation-cap"></i>
+						</div><!--services icon-->
+						<div class="services-box-info">
+							<h4>為未來做準備</h4>
+							<p>學習今天的技巧</p>
+						</div>
+						<div class="divide30"></div>
+						<p><a class="btn btn-theme-dark btn-lg" href="contact.html">聯繫我們</a></p>
+					</div><!--service box-->
+				</div>
+			</div>
+		</div>
+	</div><!--wide image showcase end-->
+	<section class="fun-fact-wrap fun-facts-bg">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3 margin20 facts-in">
+					<h3><span class="counter">7823</span> +</h3>
+					<h4>小時教</h4>
+				</div><!--facts in-->
+				<div class="col-md-3 margin20 facts-in">
+					<h3><span class="counter">10000</span> +</h3>
+					<h4>編程時間</h4>
+				</div><!--facts in-->
+				<div class="col-md-3 margin20 facts-in">
+					<h3><span class="counter">975</span> +</h3>
+					<h4>項目已完成</h4>
+				</div><!--facts in-->
+				<div class="col-md-3 margin20 facts-in">
+					<h3><span class="counter">325</span> +</h3>
+					<h4>快樂學生</h4>
+				</div><!--facts in-->
+			</div>
+		</div>
+	</section><!--fun facts-->
+	<!--intro text end-->
+	<footer id="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4 col-sm-6 margin30">
+					<div class="footer-col">
+						<h3>關於 codeTaiwan</h3>
+						<p>我們的使命是通過教育和技術一起走向未來，來影響我們的全球社會。</p>
+					</div>
+				</div><!--footer col-->
+				<div class="col-md-4 col-sm-6 margin30">
+					<div class="footer-col">
+						<h3>聯繫</h3>
+						<ul class="list-unstyled contact">
+							<li>
+								<p><strong><i class="fa fa-map-marker"></i> 地址:</strong>100台北市中正區羅斯福路三段210號</p>
+							</li>
+							<li>
+								<p><strong><i class="fa fa-envelope"></i> E-Mail:</strong> <a href="#">info@codeTaiwan.org</a></p>
+							</li>
+							<li>
+								<p><strong><i class="fa fa-phone"></i> 電話號碼:</strong> +886 979 404 569</p>
+							</li>
+						</ul>
+					</div>
+				</div><!--footer col-->
+				<div class="col-md-4 col-sm-6 margin30">
+					<div class="footer-col">
+						<h3>社交媒體</h3>
+						<ul class="list-inline footer-social">
+							<li>
+								<a class="social-icon si-dark si-gray-round si-colored-facebook" href="#"><i class="fa fa-facebook"></i> <i class="fa fa-facebook"></i></a>
+							</li>
+							<li>
+								<a class="social-icon si-dark si-gray-round si-colored-linkedin" href="#"><i class="fa fa-linkedin"></i> <i class="fa fa-linkedin"></i></a>
+							</li>
+							<li>
+								<a class="social-icon si-dark si-gray-round si-colored-instagram" href="#"><i class="fa fa-instagram"></i> <i class="fa fa-instagram"></i></a>
+							</li>
+						</ul>
+					</div>
+				</div><!--footer col-->
+			</div>
+			<div class="row">
+				<div class="col-md-12 text-center">
+					<div class="footer-btm">
+						&copy;2017 codeTaiwan.org. All rights reserved.
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer><!--default footer end here-->
+	<!--scripts and plugins -->
+	<!--must need plugin jquery-->
+	<script src="js/jquery.min.js">
+	</script> 
+	<script src="js/jquery-migrate.min.js">
+	</script> <!--bootstrap js plugin-->
+	 
+	<script src="bootstrap/js/bootstrap.min.js" type="text/javascript">
+	</script> <!--easing plugin for smooth scroll-->
+	 
+	<script src="js/jquery.easing.1.3.min.js" type="text/javascript">
+	</script> <!--sticky header-->
+	 
+	<script src="js/jquery.sticky.js" type="text/javascript">
+	</script> <!--flex slider plugin-->
+	 
+	<script src="js/jquery.flexslider-min.js" type="text/javascript">
+	</script> <!--parallax background plugin-->
+	 
+	<script src="js/jquery.stellar.min.js" type="text/javascript">
+	</script> <!--digit countdown plugin-->
+	 
+	<script src="//cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js">
+	</script> 
+	<script src="js/jquery.counterup.min.js" type="text/javascript">
+	</script> <!--on scroll animation-->
+	 
+	<script src="js/wow.min.js" type="text/javascript">
+	</script> <!--owl carousel slider-->
+	 
+	<script src="owl-carousel/owl.carousel.min.js" type="text/javascript">
+	</script> <!--popup js-->
+	 
+	<script src="js/jquery.magnific-popup.min.js" type="text/javascript">
+	</script> <!--customizable plugin edit according to your needs-->
+	 
+	<script src="js/custom.js" type="text/javascript">
+	</script> 
+	<script src="rs-plugin/js/jquery.themepunch.tools.min.js" type="text/javascript">
+	</script> 
+	<script src="rs-plugin/js/jquery.themepunch.revolution.min.js" type="text/javascript">
+	</script> 
+	<script src="js/revolution-custom.js" type="text/javascript">
+	</script> <!--cube portfolio plugin-->
+	 
+	<script src="cubeportfolio/js/jquery.cubeportfolio.min.js" type="text/javascript">
+	</script> 
+	<script src="js/cube-portfolio.js" type="text/javascript">
+	</script> 
+	<script src="js/pace.min.js" type="text/javascript">
+	</script>
 </body>
 </html>
