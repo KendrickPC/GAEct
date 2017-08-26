@@ -17,7 +17,6 @@
 	<link href="css/everydaykenneth.css" media="screen" rel="stylesheet" type="text/css">
 </head>
 <body>
-
 	<div class="top-bar-dark">
 		<div class="container">
 			<div class="row">
@@ -25,7 +24,7 @@
 				<div class="col-sm-8 text-right">
 					<ul class="list-inline top-dark-right">
 						<li>
-							<a href="index.html"><i class="fa fa-language"></i>中文</a>
+							<a href="coming-soon-1.html"><i class="fa fa-language"></i> 中文</a>
 						</li>
 					</ul>
 				</div>
@@ -58,10 +57,10 @@
 							</li>
 						</ul>
 					</li><!--menu courses li end here-->
-					<li class="dropdown active">
+					<li class="dropdown">
 						<a class="dropdown-toggle" href="news.html">News</a>
 					</li><!--menu news li end here-->
-					<li class="dropdown">
+					<li class="dropdown active">
 						<a class="dropdown-toggle" href="contact.html">Contact</a>
 					</li><!--menu contact li end here-->
 				</ul>
@@ -72,60 +71,90 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-6">
-					<h4>News</h4>
+					<h4>Contact us</h4>
 				</div>
 				<div class="col-sm-6 hidden-xs text-right"></div>
 			</div>
 		</div>
 	</div><!--breadcrumbs-->
 	<div class="divide80"></div>
-	<div class="blog-masonary-wrapper">
-		<div class="container mas-boxes">
-			<div class="mas-boxes-inner">
-				<img alt="" class="img-responsive" src="img/ukcoding.png">
-				<div class="mas-blog-inner">
-					<h3><a href="http://www.director.co.uk/coding-the-skill-you-need-to-learn-22003-2/" target="_blank">Coding: the skill you need to learn</a></h3>
-					<ul class="list-inline post-detail">
-						<li>by <a href="http://www.director.co.uk/coding-the-skill-you-need-to-learn-22003-2/" target="_blank">Nick Scott</a>
-						</li>
-						<li><i class="fa fa-calendar"></i> 31st may 2017</li>
-					</ul>
-					<p>No longer one of the dark arts of the information revolution, coding is now a mainstream workplace skill that UK business leaders need to embrace – and quickly.</p><a href="http://www.wndu.com/content/news/South-Bend-Coding-School-expanding-to-help-kids-learn-how-to-code-433722323.html" target="_blank">Continue reading</a>
-				</div><!--blog inner-->
-			</div>
-			<div class="mas-boxes-inner">
-				<img alt="" class="img-responsive" src="img/ukcoding.png">
-				<div class="mas-blog-inner">
-					<h3><a href="http://www.radionz.co.nz/news/political/333999/kids-to-learn-how-to-code-before-high-school" target="_blank">Kids to learn how to code before high school</a></h3>
-					<ul class="list-inline post-detail">
-						<li>by <a href="http://www.radionz.co.nz/news/political/333999/kids-to-learn-how-to-code-before-high-school" target="_blank">radionz.co.nz</a>
-						</li>
-						<li><i class="fa fa-calendar"></i> 28th june 2017</li>
-					</ul>
-					<p>Proposed changes to the school curriculum will require all children to learn how to program computers by the time they finish primary school.</p><a href="http://www.radionz.co.nz/news/political/333999/kids-to-learn-how-to-code-before-high-school" target="_blank">Continue reading</a>
-				</div><!--blog inner-->
-			</div>
-			<div class="mas-boxes-inner">
-				<img alt="" class="img-responsive" src="img/ukcoding.png">
-				<div class="mas-blog-inner">
-					<h3><a href="https://learningenglish.voanews.com/a/new-game-teaches-children-to-write-computer-code-creatively/3936310.html" target="_blank">New Games Teaches Children to Write Computer Code Creatively</a></h3>
-					<ul class="list-inline post-detail">
-						<li>by <a href="https://learningenglish.voanews.com/a/new-game-teaches-children-to-write-computer-code-creatively/3936310.html" target="_blank">VOA Learning English</a>
-						</li>
-						<li><i class="fa fa-calendar"></i> 11th july 2017</li>
-					</ul>
-					<p>A common belief is that people who write computer code must be good at math and logic. However, software engineers say that creativity is also an important quality for coding.</p><a href="https://learningenglish.voanews.com/a/new-game-teaches-children-to-write-computer-code-creatively/3936310.html" target="_blank">Continue reading</a>
-				</div><!--blog inner-->
-			</div>
-		</div>
-		<div class="container">
-			<ul class="pager">
-				<li class="previous"><!-- <a href="#">← Previous Page</a> --></li>
-				<li class="next"><!-- <a href="#">Next Page →</a> --></li>
-			</ul>
-		</div>
-	</div><!--masonary wrapper-->
+	<div class="container">
+		<div id="map-canvas"></div>
+	</div><!--.container-->
 	<div class="divide60"></div>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-8 margin30">
+				<h3 class="heading">Contact us</h3>
+				<p>For more information about our courses or to enroll in one of our programs, please fill out the form below.</p>
+				<div class="divide30"></div>
+				<div class="form-contact">
+					<div class="required">
+						<p>( <span>*</span> fields are required )</p>
+					</div>
+					<form id="contactForm" method="post" name="sentMessage" novalidate="">
+						<div class="row">
+							<div class="col-md-6">
+								<div class="row control-group">
+									<div class="form-group col-xs-12 controls">
+										<label>Name<span>*</span></label> <input class="form-control" data-validation-required-message="Please enter your name." id="name" placeholder="Name" required="" type="text">
+										<p class="help-block"></p>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="row control-group">
+									<div class="form-group col-xs-12 controls">
+										<label>Email Address<span>*</span></label> <input class="form-control" data-validation-required-message="Please enter your email address." id="email" placeholder="Email Address" required="" type="email">
+										<p class="help-block"></p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row control-group">
+							<div class="form-group col-xs-12 controls">
+								<label>Phone Number<span>*</span></label> <input class="form-control" data-validation-required-message="Please enter your phone number." id="phone" placeholder="Phone Number" required="" type="tel">
+								<p class="help-block"></p>
+							</div>
+						</div>
+						<div class="row control-group">
+							<div class="form-group col-xs-12 controls">
+								<label>Message<span>*</span></label> 
+								<textarea class="form-control" data-validation-required-message="Please enter a message." id="message" placeholder="Message" required="" rows="5"></textarea>
+								<p class="help-block"></p>
+							</div>
+						</div><br>
+						<div id="success"></div>
+						<div class="row">
+							<div class="form-group col-xs-12">
+								<button class="btn btn-theme-bg btn-lg" type="submit">Send Message</button>
+							</div>
+						</div>
+					</form>
+				</div><!--contact form-->
+			</div>
+			<div class="col-md-4">
+				<h3 class="heading">Contact info</h3>
+				<ul class="list-unstyled contact contact-info">
+					<li>
+						<p><strong><i class="fa fa-map-marker"></i> Address:</strong> No. 210, Section 3, Roosevelt Rd, Zhongzheng District Taipei City, Taiwan 100</p>
+					</li>
+					<li>
+						<p><strong><i class="fa fa-envelope"></i> Mail Us:</strong> <a href="#">info@codetaiwan.org</a></p>
+					</li>
+					<li>
+						<p><strong><i class="fa fa-phone"></i> Phone:</strong> +886 979 404 569</p>
+					</li>
+				</ul>
+				<div class="divide40"></div>
+				<h4>Get social</h4>
+				<div class=" margin10">
+					<a class="social-icon si-dark si-colored-facebook" href="#"><i class="fa fa-facebook"></i> <i class="fa fa-facebook"></i></a> <a class="social-icon si-dark si-colored-linkedin" href="#"><i class="fa fa-linkedin"></i> <i class="fa fa-linkedin"></i></a> <a class="social-icon si-dark si-colored-instagram" href="#"><i class="fa fa-instagram"></i> <i class="fa fa-instagram"></i></a>
+				</div><!--socials-->
+			</div>
+		</div>
+	</div>
+	<div class="divide40"></div><!--intro text end-->
 	<footer id="footer">
 		<div class="container">
 			<div class="row">
@@ -186,8 +215,6 @@
 	<!--scripts and plugins -->
 	<!--must need plugin jquery-->
 	<script src="js/jquery.min.js">
-	</script> 
-	<script src="js/jquery-migrate.min.js">
 	</script> <!--bootstrap js plugin-->
 	 
 	<script src="bootstrap/js/bootstrap.min.js" type="text/javascript">
@@ -218,14 +245,53 @@
 	</script> <!--popup js-->
 	 
 	<script src="js/jquery.magnific-popup.min.js" type="text/javascript">
-	</script> <!--masonary js-->
-	 
-	<script src="js/jquery.masonry.min.js" type="text/javascript">
 	</script> <!--customizable plugin edit according to your needs-->
 	 
 	<script src="js/custom.js" type="text/javascript">
+	</script> <!--cantact form script-->
+	 
+	<script src="js/contact_me.js" type="text/javascript">
 	</script> 
-	<script src="js/masonary-custom.js" type="text/javascript">
+	<script src="js/jqBootstrapValidation.js" type="text/javascript">
+	</script> <!--gmap js-->
+	 
+	<script src="https://maps.googleapis.com/maps/api/js?&key=AIzaSyB56jZO1ju-qfea2i9V8sQNXb5jKQ0OGmQ" type="text/javascript">
+	</script> 
+	<script type="text/javascript">
+	           var myLatlng;
+	           var map;
+	           var marker;
+
+	           function initialize() {
+	               myLatlng = new google.maps.LatLng(25.018362, 121.528758);
+
+	               var mapOptions = {
+	                   zoom: 13,
+	                   center: myLatlng,
+	                   mapTypeId: google.maps.MapTypeId.ROADMAP,
+	                   scrollwheel: false,
+	                   draggable: false
+	               };
+	               map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+
+	               var contentString = '<p style="line-height: 20px;"><strong>codeTaiwan.org<\/strong><\/p><p>Taipei, Taiwan, 1234567<\/p>';
+
+	               var infowindow = new google.maps.InfoWindow({
+	                   content: contentString
+	               });
+
+	               marker = new google.maps.Marker({
+	                   position: myLatlng,
+	                   map: map,
+	                   title: 'Marker'
+	               });
+
+	               google.maps.event.addListener(marker, 'click', function() {
+	                   infowindow.open(map, marker);
+	               });
+	           }
+
+	           google.maps.event.addDomListener(window, 'load', initialize);
 	</script>
 </body>
 </html>

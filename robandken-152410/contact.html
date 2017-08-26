@@ -1,341 +1,291 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>codeTaiwan.org</title>
+<head>
+	<meta charset="utf-8">
+	<meta content="IE=edge" http-equiv="X-UA-Compatible">
+	<meta content="width=device-width, initial-scale=1" name="viewport">
+	<title>codeTaiwan.org</title><!-- Bootstrap -->
+	<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet"><!-- custom css (blue color by default) -->
+	<link href="css/style.css" media="screen" rel="stylesheet" type="text/css"><!-- font awesome for icons -->
+	<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet"><!-- flex slider css -->
+	<link href="css/flexslider.css" media="screen" rel="stylesheet" type="text/css"><!-- animated css  -->
+	<link href="css/animate.css" media="screen" rel="stylesheet" type="text/css"><!--owl carousel css-->
+	<link href="owl-carousel/assets/owl.carousel.css" media="screen" rel="stylesheet" type="text/css">
+	<link href="owl-carousel/assets/owl.theme.default.css" media="screen" rel="stylesheet" type="text/css"><!--mega menu -->
+	<link href="css/yamm.css" rel="stylesheet" type="text/css"><!--popups css-->
+	<link href="css/magnific-popup.css" rel="stylesheet" type="text/css">
+	<link href="css/everydaykenneth.css" media="screen" rel="stylesheet" type="text/css">
+</head>
+<body>
+	<div class="top-bar-dark">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-4 hidden-xs"></div>
+				<div class="col-sm-8 text-right">
+					<ul class="list-inline top-dark-right">
+						<li>
+							<a href="index-en.html"><i class="fa fa-language"></i> English</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div><!--top-bar-dark end here-->
+	<!--navigation -->
+	<!-- Static navbar -->
+	<div class="navbar navbar-default navbar-static-top yamm sticky" role="navigation">
+		<div class="container">
+			<div class="navbar-header">
+				<button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse" type="button"><span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span></button> <a class="navbar-brand" href="index.html"><img alt="codeTaiwan" src="img/logoCodeTaiwan.jpg"></a>
+			</div><!-- begin navigation section -->
+			<div class="navbar-collapse collapse">
+				<ul class="nav navbar-nav navbar-right">
+					<li class="dropdown">
+						<a class="dropdown-toggle" href="index.html">首頁</a>
+					</li><!--menu home li end here-->
+					<li class="dropdown">
+						<a class="dropdown-toggle" href="about.html">關於我們</a>
+					</li><!--menu about li end here-->
+					<li class="dropdown">
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#">服务 <i class="fa fa-angle-down"></i></a>
+						<ul class="dropdown-menu" role="menu">
+							<li>
+								<a href="courses.html">培训班</a>
+							</li>
+							<li>
+								<a href="tutoring.html">家教</a>
+							</li>
+						</ul>
+					</li><!--menu courses li end here-->
+					<li class="dropdown">
+						<a class="dropdown-toggle" href="news.html">新聞</a>
+					</li><!--menu news li end here-->
+					<li class="dropdown active">
+						<a class="dropdown-toggle" href="contact.html">聯繫我們</a>
+					</li><!--menu contact li end here-->
+				</ul>
+			</div>
+		</div><!--container-->
+	</div><!--end navigation bar-->
+	<div class="breadcrumb-wrap">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-6">
+					<h4>聯繫我們</h4>
+				</div>
+				<div class="col-sm-6 hidden-xs text-right"></div>
+			</div>
+		</div>
+	</div><!--breadcrumbs-->
+	<div class="divide80"></div>
+	<div class="container">
+		<div id="map-canvas"></div>
+	</div><!--.container-->
+	<div class="divide60"></div>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-8 margin30">
+				<h3 class="heading">聯繫我們</h3>
+				<p>有關我們課程的更多信息或註冊我們的課程之一，請填寫以下表格。</p>
+				<div class="divide30"></div>
+				<div class="form-contact">
+					<div class="required">
+						<p>( <span>*</span> 字段是必需的 )</p>
+					</div>
+					<form id="contactForm" method="post" name="sentMessage" novalidate="">
+						<div class="row">
+							<div class="col-md-6">
+								<div class="row control-group">
+									<div class="form-group col-xs-12 controls">
+										<label>名字<span>*</span></label> <input class="form-control" data-validation-required-message="Please enter your name." id="name" placeholder="Name" required="" type="text">
+										<p class="help-block"></p>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="row control-group">
+									<div class="form-group col-xs-12 controls">
+										<label>Email <span>*</span></label> <input class="form-control" data-validation-required-message="Please enter your email address." id="email" placeholder="Email Address" required="" type="email">
+										<p class="help-block"></p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row control-group">
+							<div class="form-group col-xs-12 controls">
+								<label>電話號碼<span>*</span></label> <input class="form-control" data-validation-required-message="Please enter your phone number." id="phone" placeholder="Phone Number" required="" type="tel">
+								<p class="help-block"></p>
+							</div>
+						</div>
+						<div class="row control-group">
+							<div class="form-group col-xs-12 controls">
+								<label>信息<span>*</span></label> 
+								<textarea class="form-control" data-validation-required-message="Please enter a message." id="message" placeholder="Message" required="" rows="5"></textarea>
+								<p class="help-block"></p>
+							</div>
+						</div><br>
+						<div id="success"></div>
+						<div class="row">
+							<div class="form-group col-xs-12">
+								<button class="btn btn-theme-bg btn-lg" type="submit">發信息</button>
+							</div>
+						</div>
+					</form>
+				</div><!--contact form-->
+			</div>
+			<div class="col-md-4">
+				<h3 class="heading">聯繫信息</h3>
+				<ul class="list-unstyled contact contact-info">
+					<li>
+						<p><strong><i class="fa fa-map-marker"></i> 地址:</strong> 100台北市中正區羅斯福路三段210號</p>
+					</li>
+					<li>
+						<p><strong><i class="fa fa-envelope"></i> Mail Us:</strong> <a href="#">info@codetaiwan.org</a></p>
+					</li>
+					<li>
+						<p><strong><i class="fa fa-phone"></i> 電話號碼:</strong> +886 979 404 569</p>
+					</li>
+				</ul>
+				<div class="divide40"></div>
+				<h4>獲得社交</h4>
+				<div class=" margin10">
+					<a class="social-icon si-dark si-colored-facebook" href="#"><i class="fa fa-facebook"></i> <i class="fa fa-facebook"></i></a> <a class="social-icon si-dark si-colored-linkedin" href="#"><i class="fa fa-linkedin"></i> <i class="fa fa-linkedin"></i></a> <a class="social-icon si-dark si-colored-instagram" href="#"><i class="fa fa-instagram"></i> <i class="fa fa-instagram"></i></a>
+				</div><!--socials-->
+			</div>
+		</div>
+	</div>
+	<div class="divide40"></div><!--intro text end-->
+	<footer id="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4 col-sm-6 margin30">
+					<div class="footer-col">
+						<h3>關於 codeTaiwan</h3>
+						<p>我們的使命是通過教育和技術一起走向未來，來影響我們的全球社會。</p>
+					</div>
+				</div><!--footer col-->
+				<div class="col-md-4 col-sm-6 margin30">
+					<div class="footer-col">
+						<h3>聯繫</h3>
+						<ul class="list-unstyled contact">
+							<li>
+								<p><strong><i class="fa fa-map-marker"></i> 地址:</strong>100台北市中正區羅斯福路三段210號</p>
+							</li>
+							<li>
+								<p><strong><i class="fa fa-envelope"></i> E-Mail我們:</strong> <a href="#">info@codeTaiwan.org</a></p>
+							</li>
+							<li>
+								<p><strong><i class="fa fa-phone"></i> 電話號碼:</strong> +886 979 404 569</p>
+							</li>
+						</ul>
+					</div>
+				</div><!--footer col-->
+				<div class="col-md-4 col-sm-6 margin30">
+					<div class="footer-col">
+						<h3>社交媒體</h3>
+						<ul class="list-inline footer-social">
+							<li>
+								<a class="social-icon si-dark si-gray-round si-colored-facebook" href="#"><i class="fa fa-facebook"></i> <i class="fa fa-facebook"></i></a>
+							</li>
+							<li>
+								<a class="social-icon si-dark si-gray-round si-colored-linkedin" href="#"><i class="fa fa-linkedin"></i> <i class="fa fa-linkedin"></i></a>
+							</li>
+							<li>
+								<a class="social-icon si-dark si-gray-round si-colored-instagram" href="#"><i class="fa fa-instagram"></i> <i class="fa fa-instagram"></i></a>
+							</li>
+						</ul>
+					</div>
+				</div><!--footer col-->
+			</div>
+			<div class="row">
+				<div class="col-md-12 text-center">
+					<div class="footer-btm">
+						&copy;2017 codeTaiwan.org. All rights reserved.
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer><!--default footer end here-->
+	<!--scripts and plugins -->
+	<!--must need plugin jquery-->
+	<script src="js/jquery.min.js">
+	</script> <!--bootstrap js plugin-->
+	 
+	<script src="bootstrap/js/bootstrap.min.js" type="text/javascript">
+	</script> <!--easing plugin for smooth scroll-->
+	 
+	<script src="js/jquery.easing.1.3.min.js" type="text/javascript">
+	</script> <!--sticky header-->
+	 
+	<script src="js/jquery.sticky.js" type="text/javascript">
+	</script> <!--flex slider plugin-->
+	 
+	<script src="js/jquery.flexslider-min.js" type="text/javascript">
+	</script> <!--parallax background plugin-->
+	 
+	<script src="js/jquery.stellar.min.js" type="text/javascript">
+	</script> <!--digit countdown plugin-->
+	 
+	<script src="js/waypoints.min.js">
+	</script> <!--digit countdown plugin-->
+	 
+	<script src="js/jquery.counterup.min.js" type="text/javascript">
+	</script> <!--on scroll animation-->
+	 
+	<script src="js/wow.min.js" type="text/javascript">
+	</script> <!--owl carousel slider-->
+	 
+	<script src="owl-carousel/owl.carousel.min.js" type="text/javascript">
+	</script> <!--popup js-->
+	 
+	<script src="js/jquery.magnific-popup.min.js" type="text/javascript">
+	</script> <!--customizable plugin edit according to your needs-->
+	 
+	<script src="js/custom.js" type="text/javascript">
+	</script> <!--cantact form script-->
+	 
+	<script src="js/contact_me.js" type="text/javascript">
+	</script> 
+	<script src="js/jqBootstrapValidation.js" type="text/javascript">
+	</script> <!--gmap js-->
+	 
+	<script src="https://maps.googleapis.com/maps/api/js?&key=AIzaSyB56jZO1ju-qfea2i9V8sQNXb5jKQ0OGmQ" type="text/javascript">
+	</script> 
+	<script type="text/javascript">
+	           var myLatlng;
+	           var map;
+	           var marker;
 
-        <!-- Bootstrap -->
-        <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
-        <!-- custom css (blue color by default) -->
-        <link href="css/style.css" rel="stylesheet" type="text/css" media="screen">
+	           function initialize() {
+	               myLatlng = new google.maps.LatLng(25.018362, 121.528758);
 
-        <!-- font awesome for icons -->
-        <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
-        <!-- flex slider css -->
-        <link href="css/flexslider.css" rel="stylesheet" type="text/css" media="screen">
-        <!-- animated css  -->
-        <link href="css/animate.css" rel="stylesheet" type="text/css" media="screen">
+	               var mapOptions = {
+	                   zoom: 13,
+	                   center: myLatlng,
+	                   mapTypeId: google.maps.MapTypeId.ROADMAP,
+	                   scrollwheel: false,
+	                   draggable: false
+	               };
+	               map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
 
-        <!--owl carousel css-->
-        <link href="owl-carousel/assets/owl.carousel.css" rel="stylesheet" type="text/css" media="screen">
-        <link href="owl-carousel/assets/owl.theme.default.css" rel="stylesheet" type="text/css" media="screen">
-        <!--mega menu -->
-        <link href="css/yamm.css" rel="stylesheet" type="text/css">
-        <!--popups css-->
-        <link href="css/magnific-popup.css" rel="stylesheet" type="text/css">
-        <link href="css/everydaykenneth.css" media="screen" rel="stylesheet" type="text/css">
+	               var contentString = '<p style="line-height: 20px;"><strong>codeTaiwan.org<\/strong><\/p><p>Taipei, Taiwan, 1234567<\/p>';
 
-    </head>
-    <body>
-        <div class="top-bar-dark">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-sm-4 hidden-xs">
-                        </div>
-                        <div class="col-sm-8 text-right">
-                            <ul class="list-inline top-dark-right">
-                                <li>
-                                    <a href="coming-soon-1.html"><i class="fa fa-language"></i> 中文</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div><!--top-bar-dark end here-->
-    <!--navigation -->
-    <!-- Static navbar -->
-    <div class="navbar navbar-default navbar-static-top yamm sticky" role="navigation">
-        <div class="container">
-            <div class="navbar-header">
-                <button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse" type="button"><span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span></button> <a class="navbar-brand" href="index.html"><img alt="codeTaiwan" src="img/logoCodeTaiwan.jpg"></a>
-            </div>
-            <!-- begin navigation section -->
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="dropdown">
-                        <a class="dropdown-toggle" href="index.html">Home</a>
-                    </li>
-                    <!--menu home li end here-->
-                    <li class="dropdown">
-                        <a class="dropdown-toggle" href="about.html">About</a>
-                    </li>
-                    <!--menu about li end here-->
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Services <i class="fa fa-angle-down"></i></a>
-                        <ul class="dropdown-menu" role="menu">
-                            <li><a href="courses.html">Courses</a></li>
-                            <li><a href="tutoring.html">Tutoring</a></li>
-                        </ul>
-                    </li>
-                    <!--menu courses li end here-->
-                    <li class="dropdown">
-                        <a class="dropdown-toggle" href="news.html">News</a>
-                    </li>
-                    <!--menu news li end here-->
-                    <li class="dropdown active">
-                        <a class="dropdown-toggle" href="contact.html">Contact</a>
-                    </li>
-                    <!--menu contact li end here-->
-                </ul>
-            </div>
-        </div>
-        <!--container-->
-    </div>
-    <!--end navigation bar-->
-        <div class="breadcrumb-wrap">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-6">
-                        <h4>Contact us</h4>
-                    </div>
-                    <div class="col-sm-6 hidden-xs text-right">
+	               var infowindow = new google.maps.InfoWindow({
+	                   content: contentString
+	               });
 
-                    </div>
-                </div>
-            </div>
-        </div><!--breadcrumbs-->
-        <div class="divide80"></div>
-        <div class="container">
-            <div id="map-canvas"></div>
-        </div><!--.container-->
-        <div class="divide60"></div>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8 margin30">
-                    <h3 class="heading">Contact us</h3>
-                    <p>
-                        For more information about our courses or to enroll in one of our programs, please fill out the form below.
-                    </p>
-                    <div class="divide30"></div>
-                    <div class="form-contact">
-                        <div class="required">
-                            <p>( <span>*</span> fields are required )</p>
-                        </div>
+	               marker = new google.maps.Marker({
+	                   position: myLatlng,
+	                   map: map,
+	                   title: 'Marker'
+	               });
 
-                       <form name="sentMessage" id="contactForm" method="post" novalidate>
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="row control-group">
-                                        <div class="form-group col-xs-12 controls">
-                                            <label>Name<span>*</span></label>
-                                            <input type="text" class="form-control" placeholder="Name" id="name" required data-validation-required-message="Please enter your name.">
-                                            <p class="help-block"></p>
-                                        </div>
-                                    </div>
+	               google.maps.event.addListener(marker, 'click', function() {
+	                   infowindow.open(map, marker);
+	               });
+	           }
 
-                                </div>
-
-                                <div class="col-md-6">
-                                    <div class="row control-group">
-                                        <div class="form-group col-xs-12 controls">
-                                            <label>Email Address<span>*</span></label>
-                                            <input type="email" class="form-control" placeholder="Email Address" id="email" required data-validation-required-message="Please enter your email address.">
-                                            <p class="help-block"></p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row control-group">
-                                <div class="form-group col-xs-12  controls">
-                                    <label>Phone Number<span>*</span></label>
-                                    <input type="tel" class="form-control" placeholder="Phone Number" id="phone" required data-validation-required-message="Please enter your phone number.">
-                                    <p class="help-block"></p>
-                                </div>
-                            </div>
-                            <div class="row control-group">
-                                <div class="form-group col-xs-12 controls">
-                                    <label>Message<span>*</span></label>
-                                    <textarea rows="5" class="form-control" placeholder="Message" id="message" required data-validation-required-message="Please enter a message."></textarea>
-                                    <p class="help-block"></p>
-                                </div>
-                            </div>
-                            <br>
-                            <div id="success"></div>
-                            <div class="row">
-                                <div class="form-group col-xs-12">
-                                    <button type="submit" class="btn btn-theme-bg btn-lg">Send Message</button>
-                                </div>
-                            </div>
-                        </form>
-
-                    </div><!--contact form-->
-                </div>
-                <div class="col-md-4">
-                    <h3 class="heading">Contact info</h3>
-                    <ul class="list-unstyled contact contact-info">
-                        <li><p><strong><i class="fa fa-map-marker"></i> Address:</strong> No. 210, Section 3, Roosevelt Rd, Zhongzheng District Taipei City, Taiwan 100</p></li>
-                        <li><p><strong><i class="fa fa-envelope"></i> Mail Us:</strong> <a href="#">info@codetaiwan.org</a></p></li>
-                        <li> <p><strong><i class="fa fa-phone"></i> Phone:</strong> +886 979 404 569</p></li>
-                    </ul>
-                    <div class="divide40"></div>
-                    <h4>Get social</h4>
-                     <div class=" margin10">
-                            <a href="#" class="social-icon si-dark si-colored-facebook">
-                                <i class="fa fa-facebook"></i>
-                                <i class="fa fa-facebook"></i>
-                            </a>
-                            <a href="#" class="social-icon si-dark si-colored-linkedin">
-                                <i class="fa fa-linkedin"></i>
-                                <i class="fa fa-linkedin"></i>
-                            </a>
-                            <a href="#" class="social-icon si-dark si-colored-instagram">
-                                <i class="fa fa-instagram"></i>
-                                <i class="fa fa-instagram"></i>
-                            </a>
-                        </div><!--socials-->
-                </div>
-            </div>
-        </div>
-        <div class="divide40"></div>
-
-        <!--intro text end-->
-            <footer id="footer">
-                <div class="container">
-
-                    <div class="row">
-                        <div class="col-md-4 col-sm-6 margin30">
-                            <div class="footer-col">
-                                <h3>About codeTaiwan</h3>
-                                <p>
-    Our mission is to impact our global community through education and technology moving together into the future.
-                                </p>
-                                <ul class="list-inline footer-social">
-                                    <li>
-                                        <a href="#" class="social-icon si-dark si-gray-round si-colored-facebook">
-                                            <i class="fa fa-facebook"></i>
-                                            <i class="fa fa-facebook"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="social-icon si-dark si-gray-round si-colored-linkedin">
-                                            <i class="fa fa-linkedin"></i>
-                                            <i class="fa fa-linkedin"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="social-icon si-dark si-gray-round si-colored-instagram">
-                                            <i class="fa fa-instagram"></i>
-                                            <i class="fa fa-instagram"></i>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div><!--footer col-->
-                        <div class="col-md-4 col-sm-6 margin30">
-                            <div class="footer-col">
-                                <h3>Contact</h3>
-                                <ul class="list-unstyled contact">
-
-
-                                    <li><p><strong><i class="fa fa-map-marker"></i> Address:</strong>No. 210, Section 3, Roosevelt Rd, Zhongzheng District
-    Taipei City, Taiwan 100</p></li>
-                                    <li><p><strong><i class="fa fa-envelope"></i> Mail Us:</strong> <a href="#">info@codeTaiwan.org</a></p></li>
-                                    <li> <p><strong><i class="fa fa-phone"></i> Phone:</strong> +886 979 404 569</p></li>
-                                </ul>
-                            </div>
-                        </div><!--footer col-->
-
-                        <div class="col-md-4 col-sm-6 margin30">
-                            <div class="footer-col">
-                                <h3>Newsletter</h3>
-                                <p>
-                                    Subscribe to stay in touch with the latest in tech news and our events.
-                                </p>
-                                <form role="form" class="subscribe-form">
-                                    <div class="input-group">
-                                        <input type="text" class="form-control" placeholder="Enter email to subscribe">
-                                        <span class="input-group-btn">
-                                            <button class="btn  btn-theme-dark btn-lg" type="submit">Ok</button>
-                                        </span>
-                                    </div>
-                                </form>
-                            </div>
-                        </div><!--footer col-->
-                </div>
-                <div class="row">
-                    <div class="col-md-12 text-center">
-                        <div class="footer-btm">
-                            &copy;2017 codeTaiwan.org
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </footer><!--default footer end here-->
-       <!--scripts and plugins -->
-        <!--must need plugin jquery-->
-        <script src="js/jquery.min.js"></script>
-        <!--bootstrap js plugin-->
-        <script src="bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
-        <!--easing plugin for smooth scroll-->
-        <script src="js/jquery.easing.1.3.min.js" type="text/javascript"></script>
-        <!--sticky header-->
-        <script type="text/javascript" src="js/jquery.sticky.js"></script>
-        <!--flex slider plugin-->
-        <script src="js/jquery.flexslider-min.js" type="text/javascript"></script>
-        <!--parallax background plugin-->
-        <script src="js/jquery.stellar.min.js" type="text/javascript"></script>
-
-
-        <!--digit countdown plugin-->
-        <script src="js/waypoints.min.js"></script>
-        <!--digit countdown plugin-->
-        <script src="js/jquery.counterup.min.js" type="text/javascript"></script>
-        <!--on scroll animation-->
-        <script src="js/wow.min.js" type="text/javascript"></script>
-        <!--owl carousel slider-->
-        <script src="owl-carousel/owl.carousel.min.js" type="text/javascript"></script>
-        <!--popup js-->
-        <script src="js/jquery.magnific-popup.min.js" type="text/javascript"></script>
-
-
-
-
-        <!--customizable plugin edit according to your needs-->
-        <script src="js/custom.js" type="text/javascript"></script>
-
-
-        <!--cantact form script-->
-        <script src="js/contact_me.js" type="text/javascript"></script>
-        <script src="js/jqBootstrapValidation.js" type="text/javascript"></script>
-        <!--gmap js-->
-        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?&key=AIzaSyB56jZO1ju-qfea2i9V8sQNXb5jKQ0OGmQ"></script>
-        <script type="text/javascript">
-            var myLatlng;
-            var map;
-            var marker;
-
-            function initialize() {
-                myLatlng = new google.maps.LatLng(25.018362, 121.528758);
-
-                var mapOptions = {
-                    zoom: 13,
-                    center: myLatlng,
-                    mapTypeId: google.maps.MapTypeId.ROADMAP,
-                    scrollwheel: false,
-                    draggable: false
-                };
-                map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
-
-                var contentString = '<p style="line-height: 20px;"><strong>codeTaiwan.org</strong></p><p>Taipei, Taiwan, 1234567</p>';
-
-                var infowindow = new google.maps.InfoWindow({
-                    content: contentString
-                });
-
-                marker = new google.maps.Marker({
-                    position: myLatlng,
-                    map: map,
-                    title: 'Marker'
-                });
-
-                google.maps.event.addListener(marker, 'click', function() {
-                    infowindow.open(map, marker);
-                });
-            }
-
-            google.maps.event.addDomListener(window, 'load', initialize);
-        </script>
-    </body>
+	           google.maps.event.addDomListener(window, 'load', initialize);
+	</script>
+</body>
 </html>
