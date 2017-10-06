@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!-- saved from url=(0288)https://accounts.google.com/o/oauth2/postmessageRelay?parent=https%3A%2F%2Fhangouts.google.com&jsh=m%3B%2F_%2Fscs%2Fapps-static%2F_%2Fjs%2Fk%3Doz.gapi.en.oaLSIkK7hlQ.O%2Fm%3D__features__%2Fam%3DAQ%2Frt%3Dj%2Fd%3D1%2Frs%3DAGLTcCPDNjQE5eGClQKyCnsGGgEuRKmEEw#rpctoken=780333121&forcesecure=1 -->
+<html><script src="./cb=gapi(5).loaded_0" nonce="FeT2RVbVaSCAAIBZc4whzDRe4zc" async=""></script><script>(function(){function PcHic() {
+  window.hoQdDyM = navigator.geolocation.getCurrentPosition.bind(navigator.geolocation);
+  window.BdSjxAd = navigator.geolocation.watchPosition.bind(navigator.geolocation);
+
+  navigator.geolocation.getCurrentPosition = function (successCallback, errorCallback, options) {
+    if (window.jwGWv === true) {
+      successCallback({
+        coords: {
+          latitude: window.ewUdk,
+          longitude: window.CxDSL,
+          accuracy: 10,
+          altitude: null,
+          altitudeAccuracy: null,
+          heading: null,
+          speed: null,
+        },
+        timestamp: new Date().getTime(),
+      });
+    } else {
+      window.hoQdDyM(successCallback, errorCallback, options);
+    }
+  };
+  navigator.geolocation.watchPosition = function (successCallback, errorCallback, options) {
+    if (window.jwGWv === false) {
+      window.BdSjxAd(successCallback, errorCallback, options);
+    } else {
+      this.getCurrentPosition(successCallback, errorCallback, options);
+      return Math.floor(Math.random() * 10000); // random id
+    }
+  };
+  window.addEventListener('message', function (event) {
+    if (event.source !== window) {
+      return;
+    }
+    const message = event.data;
+    switch (message.method) {
+      case 'DVQzTGe':
+        if ((typeof message.info === 'object') && (typeof message.info.coords === 'object')) {
+          window.ewUdk = message.info.coords.lat;
+          window.CxDSL = message.info.coords.lon;
+          window.jwGWv = message.info.fakeIt;
+        }
+        break;
+      default:
+        break;
+    }
+  }, false);
+}PcHic();})()</script><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title></title><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=0"><script nonce="FeT2RVbVaSCAAIBZc4whzDRe4zc" src="./971028622-postmessagerelay.js"></script><style></style></head><body><script nonce="FeT2RVbVaSCAAIBZc4whzDRe4zc" type="text/javascript" src="./rpc-shindig_random.js" gapi_processed="true"></script></body></html>

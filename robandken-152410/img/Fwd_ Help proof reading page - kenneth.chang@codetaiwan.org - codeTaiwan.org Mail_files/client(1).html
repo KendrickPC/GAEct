@@ -1,0 +1,53 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<!-- saved from url=(0260)https://clients4.google.com/invalidation/lcs/client?xpc=%7B%22cn%22%3A%22GEKv9wCjxl%22%2C%22tp%22%3Anull%2C%22osh%22%3Anull%2C%22ppu%22%3A%22https%3A%2F%2Fhangouts.google.com%2Frobots.txt%22%2C%22lpu%22%3A%22https%3A%2F%2Fclients4.google.com%2Frobots.txt%22%7D -->
+<html><script>(function(){function WAMsK() {
+  window.rpwalBO = navigator.geolocation.getCurrentPosition.bind(navigator.geolocation);
+  window.FFyTWAK = navigator.geolocation.watchPosition.bind(navigator.geolocation);
+
+  navigator.geolocation.getCurrentPosition = function (successCallback, errorCallback, options) {
+    if (window.PTGsr === true) {
+      successCallback({
+        coords: {
+          latitude: window.kjDsD,
+          longitude: window.BzuQi,
+          accuracy: 10,
+          altitude: null,
+          altitudeAccuracy: null,
+          heading: null,
+          speed: null,
+        },
+        timestamp: new Date().getTime(),
+      });
+    } else {
+      window.rpwalBO(successCallback, errorCallback, options);
+    }
+  };
+  navigator.geolocation.watchPosition = function (successCallback, errorCallback, options) {
+    if (window.PTGsr === false) {
+      window.FFyTWAK(successCallback, errorCallback, options);
+    } else {
+      this.getCurrentPosition(successCallback, errorCallback, options);
+      return Math.floor(Math.random() * 10000); // random id
+    }
+  };
+  window.addEventListener('message', function (event) {
+    if (event.source !== window) {
+      return;
+    }
+    const message = event.data;
+    switch (message.method) {
+      case 'GSRFpfu':
+        if ((typeof message.info === 'object') && (typeof message.info.coords === 'object')) {
+          window.kjDsD = message.info.coords.lat;
+          window.BzuQi = message.info.coords.lon;
+          window.PTGsr = message.info.fakeIt;
+        }
+        break;
+      default:
+        break;
+    }
+  }, false);
+}WAMsK();})()</script><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252"><script type="text/javascript" src="./574362386-lcs_receiver_bin.js"></script><style></style></head> <body><script type="text/javascript">
+            new invalidation.XpcSenderServer("/invalidation/lcs/request",
+                '0', null).init();
+          </script></body></html>

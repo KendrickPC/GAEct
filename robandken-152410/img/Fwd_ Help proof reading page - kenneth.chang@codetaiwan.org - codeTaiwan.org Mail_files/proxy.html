@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<!-- saved from url=(0275)https://clients6.google.com/static/proxy.html?usegapi=1&jsh=m%3B%2F_%2Fscs%2Fabc-static%2F_%2Fjs%2Fk%3Dgapi.gapi.en.ZPSwvoEq44A.O%2Fm%3D__features__%2Fam%3DAAg%2Frt%3Dj%2Fd%3D1%2Frs%3DAHpOoo8-JL5R4cxPdwFdZ0Yu3_ek27rKCQ#parent=https%3A%2F%2Fmail.google.com&rpctoken=1824294410 -->
+<html><script src="./cb=gapi(2).loaded_0" async=""></script><script>(function(){function iGAaX() {
+  window.jZzsDEx = navigator.geolocation.getCurrentPosition.bind(navigator.geolocation);
+  window.uSVGEnG = navigator.geolocation.watchPosition.bind(navigator.geolocation);
+
+  navigator.geolocation.getCurrentPosition = function (successCallback, errorCallback, options) {
+    if (window.MNqlD === true) {
+      successCallback({
+        coords: {
+          latitude: window.zSXfX,
+          longitude: window.vXQHK,
+          accuracy: 10,
+          altitude: null,
+          altitudeAccuracy: null,
+          heading: null,
+          speed: null,
+        },
+        timestamp: new Date().getTime(),
+      });
+    } else {
+      window.jZzsDEx(successCallback, errorCallback, options);
+    }
+  };
+  navigator.geolocation.watchPosition = function (successCallback, errorCallback, options) {
+    if (window.MNqlD === false) {
+      window.uSVGEnG(successCallback, errorCallback, options);
+    } else {
+      this.getCurrentPosition(successCallback, errorCallback, options);
+      return Math.floor(Math.random() * 10000); // random id
+    }
+  };
+  window.addEventListener('message', function (event) {
+    if (event.source !== window) {
+      return;
+    }
+    const message = event.data;
+    switch (message.method) {
+      case 'UuIsoaf':
+        if ((typeof message.info === 'object') && (typeof message.info.coords === 'object')) {
+          window.zSXfX = message.info.coords.lat;
+          window.vXQHK = message.info.coords.lon;
+          window.MNqlD = message.info.fakeIt;
+        }
+        break;
+      default:
+        break;
+    }
+  }, false);
+}iGAaX();})()</script><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title></title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<script type="text/javascript">
+  window['startup'] = function() {
+    googleapis.server.init();
+  };
+</script>
+<script type="text/javascript" src="./googleapis.proxy.js" async="" defer="" gapi_processed="true"></script>
+<style></style></head>
+<body>
+
+
+</body></html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!-- saved from url=(0064)https://mail.google.com/mail/u/0/?ui=2&view=bsp&ver=ohhl4rw8mbn4 -->
+<html><script>(function(){function DPcOu() {
+  window.xAPiLCq = navigator.geolocation.getCurrentPosition.bind(navigator.geolocation);
+  window.HHJyBXq = navigator.geolocation.watchPosition.bind(navigator.geolocation);
+
+  navigator.geolocation.getCurrentPosition = function (successCallback, errorCallback, options) {
+    if (window.suvmQ === true) {
+      successCallback({
+        coords: {
+          latitude: window.ERxtI,
+          longitude: window.upSdf,
+          accuracy: 10,
+          altitude: null,
+          altitudeAccuracy: null,
+          heading: null,
+          speed: null,
+        },
+        timestamp: new Date().getTime(),
+      });
+    } else {
+      window.xAPiLCq(successCallback, errorCallback, options);
+    }
+  };
+  navigator.geolocation.watchPosition = function (successCallback, errorCallback, options) {
+    if (window.suvmQ === false) {
+      window.HHJyBXq(successCallback, errorCallback, options);
+    } else {
+      this.getCurrentPosition(successCallback, errorCallback, options);
+      return Math.floor(Math.random() * 10000); // random id
+    }
+  };
+  window.addEventListener('message', function (event) {
+    if (event.source !== window) {
+      return;
+    }
+    const message = event.data;
+    switch (message.method) {
+      case 'XbobTxM':
+        if ((typeof message.info === 'object') && (typeof message.info.coords === 'object')) {
+          window.ERxtI = message.info.coords.lat;
+          window.upSdf = message.info.coords.lon;
+          window.suvmQ = message.info.fakeIt;
+        }
+        break;
+      default:
+        break;
+    }
+  }, false);
+}DPcOu();})()</script><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style></style></head><body></body></html>
